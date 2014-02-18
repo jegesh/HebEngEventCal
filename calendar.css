@@ -1,0 +1,51 @@
+﻿.jDate{
+	direction:rtl;
+	
+}
+
+ div.event{
+	height: 25px;
+	
+}
+
+ .secDate{
+	float:left;
+	font-size:.5em;
+	margin-top: 2px;
+}
+ .jDate{
+	float:right;
+	font-size:.65em;
+}
+
+ .hebEngCal{
+	width:150px;
+	table-layout: fixed;
+	direction:rtl;
+}
+ .hebEngCal td{
+	
+}
+ .hebEngCal th{
+	width:26px
+}
+ .hebEngCal caption{
+	border:2px solid black;
+	border-bottom: none;
+}
+ td.color1{
+	background-color: #EBE4DF;
+}
+ td.color2{
+	background-color: #D0CBD1;
+}
+ td.color3{
+	background-color: #B4B1B5;
+}
+ .cal_link{
+	background-color: blue;
+	text-decoration: none;
+	margin: auto;
+	margin-top: 55%;
+	
+}
