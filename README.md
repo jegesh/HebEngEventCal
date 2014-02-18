@@ -19,16 +19,16 @@ Implementation
 
 The class contains the following properties:
 
-		*string*  tableName			// name of table in database where data is stored for upcoming events 
-		*string*  dateField			// field in said table that contains the event date
-		*string*  dateFormat		// format of date in dateField, according to [PHP DateTime formatting](http://php.net/manual/en/datetime.createfromformat.php). If the date format includes a timestamp, the timestamp needs be truncated in order for the events to show up in the calendar
-		*string*  linkURL			// URL of the page the links lead to, with room for the event identifier: 'http://mysite.com/events.php?id='. Not necessary if linkIDField contains full URL for event page
-		*int* 	  days				// Number of days the calendar should display, starting from the present date. Default value is 60
-		*boolean* eventText			// Determines whether or not to display event title text in the calendar dates (TRUE for large, full page calendar, FALSE for compact calendar in the sidebar). Default value is FALSE
-		*string*  eventTextField	// Field in the table where event titles are stored. Not necessary if eventText = FALSE
-		*boolean* hebTitles			// Determines what language calendar caption will display in, and what direction the days will follow. Default value is TRUE (Hebrew, rtl)
-		*string*  linkIdField		// Field in the table that contains a unique identifier, or unique URL, for each event
-		*Array*	  dbArray			// Array containing database login details, in the following order: host, database name, user name, password
+		string  tableName			// name of table in database where data is stored for upcoming events 
+		string  dateField			// field in said table that contains the event date
+		string  dateFormat		// format of date in dateField, according to [PHP DateTime formatting](http://php.net/manual/en/datetime.createfromformat.php). If the date format includes a timestamp, the timestamp needs be truncated in order for the events to show up in the calendar
+		string  linkURL			// URL of the page the links lead to, with room for the event identifier: 'http://mysite.com/events.php?id='. Not necessary if linkIDField contains full URL for event page
+		int 	  days				// Number of days the calendar should display, starting from the present date. Default value is 60
+		boolean eventText			// Determines whether or not to display event title text in the calendar dates (TRUE for large, full page calendar, FALSE for compact calendar in the sidebar). Default value is FALSE
+		string  eventTextField	// Field in the table where event titles are stored. Not necessary if eventText = FALSE
+		boolean hebTitles			// Determines what language calendar caption will display in, and what direction the days will follow. Default value is TRUE (Hebrew, rtl)
+		string  linkIdField		// Field in the table that contains a unique identifier, or unique URL, for each event
+		Array	  dbArray			// Array containing database login details, in the following order: host, database name, user name, password
 		
 All the properties can be set individually, or in the constructor. The constructor looks like this:
 
@@ -36,8 +36,8 @@ All the properties can be set individually, or in the constructor. The construct
 
 Methods
 
-The class contains only two methods, `setDbParams(Array $dbArray)`, used to pass the database login paramaters if they weren't set in with the constructor.
-The second method is the printCal() method. It takes no paramaters, and should be called only after all the properties have been set.
+The class contains only two methods, `setDbParams(Array $dbArray)`, used to pass the database login parameters if they weren't set in with the constructor.
+The second method is the printCal() method. It takes no parameters, and should be called only after all the properties have been set.
 
 In addition to the PHP, the CSS file includes selectors for all the various components of the calendar, as well as default style definitions.  The default is for a small, text-less Hebrew (rtl) calendar.
 
