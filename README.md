@@ -21,7 +21,7 @@ The class contains the following properties:
 
 		string  tableName			// name of table in database where data is stored for upcoming events 
 		string  dateField			// field in said table that contains the event date
-		string  dateFormat		// format of date in dateField, according to [PHP DateTime formatting](http://php.net/manual/en/datetime.createfromformat.php). If the date format includes a timestamp, the timestamp needs be truncated in order for the events to show up in the calendar
+		string  dateFormat		// format of date in dateField, according to PHP DateTime formatting(http://www.php.net/manual/en/datetime.createfromformat.php). If the date format includes a timestamp, the timestamp needs be truncated in order for the events to show up in the calendar
 		string  linkURL			// URL of the page the links lead to, with room for the event identifier: 'http://mysite.com/events.php?id='. Not necessary if linkIDField contains full URL for event page
 		int 	  days				// Number of days the calendar should display, starting from the present date. Default value is 60
 		boolean eventText			// Determines whether or not to display event title text in the calendar dates (TRUE for large, full page calendar, FALSE for compact calendar in the sidebar). Default value is FALSE
@@ -61,7 +61,7 @@ Code Example
 	
 Live Demo
 ---------
-A live demo is available [here](http://jegesh.github.io/hebEngCal/index.php)
+A live demo is available [here](http://jegesh.github.io/hebEngCal/index.html)
 
 Known Issues
 ------------
